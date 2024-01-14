@@ -10,7 +10,7 @@ class E07 {
         System.out.println("Until which multiplier should the table show?");
         int multiplierLimit = scanner.nextInt();
 
-        for (int i = 1; i <= multiplierLimit; i++) {
+        for (int i = 0; i <= multiplierLimit; i++) {
             System.out.println(i + " x " + multiplicand + " = " + (i * multiplicand));
         }
 
