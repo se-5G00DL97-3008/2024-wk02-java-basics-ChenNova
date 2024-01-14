@@ -5,27 +5,21 @@ class E02 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Give a number: ");
-        double num1 = scanner.nextDouble();
+        int num1 = scanner.nextInt();
 
-        System.out.print("Give another number: ");
-        double num2 = scanner.nextDouble();
+        System.out.print("Give a number: ");
+        int num2 = scanner.nextInt();
 
-        double sum = num1 + num2;
-        double product = num1 * num2;
-        double difference = num1 - num2;
+        int sum = num1 + num2;
+        int product = num1 - num2;
+        int difference = num1 * num2;
 
-        double quotient;
-        if (num2 != 0) {
-            quotient = num1 / num2;
-        } else {
-            quotient = Double.NaN;
-        }
+        int quotient = num1 / num2;
 
         System.out.println(num1 + " + " + num2 + " = " + sum);
-        System.out.println(num1 + " * " + num2 + " = " + product);
         System.out.println(num1 + " - " + num2 + " = " + difference);
-        System.out.println(
-                num1 + " / " + num2 + " = " + (Double.isNaN(quotient) ? "Undefined (division by zero)" : quotient));
+        System.out.println(num1 + " x " + num2 + " = " + product);
+        System.out.println(num1 + " / " + num2 + " = " + quotient);
 
         scanner.close();
     }
