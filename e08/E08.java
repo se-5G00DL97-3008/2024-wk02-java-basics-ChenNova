@@ -7,11 +7,11 @@ class E08 {
         int number = 1;
 
         while (number != 0) {
-            System.out.println("Enter a number (0 to quit):");
+            System.out.println("Give a number (0 to quit):");
             number = scanner.nextInt();
 
             if (number != 0) {
-                String result = (number % 2 == 0) ? "Even number" : "Odd number";
+                String result = (number % 2 == 0) ? "Number is even" : "Number is odd";
                 System.out.println(result);
             }
         }
